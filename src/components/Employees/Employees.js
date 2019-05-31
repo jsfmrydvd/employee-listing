@@ -9,12 +9,11 @@ class Employees extends Component {
     }
     render() {
        return this.props.employees.map((employees, index)=> {
-        return <Auxiliary>
-            <Employee 
-                click={() => this.props.click(index)}
+        return <Auxiliary key={employees.id}>
+            <Employee
+                id={employees.id}
                 name={employees.name}
-                role={employees.role}
-                changed={(event) => this.props.changed(event, employees.id)}/>
+                role={employees.role}/>
         </Auxiliary>
         })    
     }

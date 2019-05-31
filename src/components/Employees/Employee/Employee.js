@@ -8,7 +8,7 @@ class Employee extends Component {
     }
     render() {
         return <Auxiliary>    
-                <p key="i1">I'm {this.props.name} and I am a/an {this.props.role}.</p>
+                <p key={this.props.id}>{this.props.id} I'm {this.props.name} and I am a/an {this.props.role}.</p>
         </Auxiliary>
     }
 };

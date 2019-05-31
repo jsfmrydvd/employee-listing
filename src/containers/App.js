@@ -24,7 +24,7 @@ class App extends Component {
   componentDidMount() {
     this.getFilterData = (event) => {
       let filterName = event.target.value;
-      let employeeData = this.state.employees.filter((emp, id) => {
+      let employeeData = this.state.employees.filter((emp) => {
         return emp.role === filterName
       }, filterName);
       this.setState({
