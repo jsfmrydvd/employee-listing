@@ -12,7 +12,8 @@ class App extends Component {
     employees: [
       { id: 1, name: 'Josef', role: 'admin' },
       { id: 2, name: 'Mary', role: 'software-engineer'}, 
-      { id: 3, name: 'David', role: 'test-engineer'}
+      { id: 3, name: 'David', role: 'test-engineer'},
+      { id: 4, name: 'jsfmrydvd', role: 'test-engineer'}
     ],
     filter: '',
     filteredEmployees: []

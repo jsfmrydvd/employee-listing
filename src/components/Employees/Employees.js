@@ -8,7 +8,7 @@ class Employees extends Component {
         console.log('[Employees]')
     }
     render() {
-       return this.props.employees.map((employees, index)=> {
+       return this.props.employees.map((employees)=> {
         return <Auxiliary key={employees.id}>
             <Employee
                 id={employees.id}
